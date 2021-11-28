@@ -11,7 +11,7 @@ function App() {
         <BrowserRouter>
           <div>
             <Routes>
-              <Route path="/" element={<Inicio />} exact={true} />
+              <Route path="/jeronimorobalino" element={<Inicio />} exact={true} />
               <Route path="/loading" element={<Loading />} />
               <Route path="/windows" element={<Windows />} />
             </Routes>
