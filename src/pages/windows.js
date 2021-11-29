@@ -20,7 +20,6 @@ export const Windows = () => {
   const [estadoModal2, cambiarEstadoModal2] = useState(false);
   const [estadoModal3, cambiarEstadoModal3] = useState(false);
   const [estadoModal4, cambiarEstadoModal4] = useState(false);
-          //https://windowsproyect.github.io/Jeronimo/#/contacto
   const [max1, setMax1] = useState("none");
   const [max2, setMax2] = useState("none");
   const [max3, setMax3] = useState("none");
@@ -61,7 +60,6 @@ export const Windows = () => {
     setCounter3(10);
     setCounter2(10);
   };
-
 
   return (
     <div>
@@ -296,11 +294,6 @@ export const Windows = () => {
           </Contenido>
         </Modal>
 
-
-
-
-
-
         <Modal
           estado={estadoModal4}
           cambiarEstado={cambiarEstadoModal4}
@@ -368,43 +361,28 @@ export const Windows = () => {
             </Draggable>
           </Contenido>
         </Modal>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       </div>
       <div className="bar">
         <img alt="logo" className="logo-bar" src={logo}></img>
         <div className="grid-bar">
-          <FontAwesomeIcon
-            icon={faUser}
-            onClick={() => cambiarEstadoModal(true)}
-          />
-          <FontAwesomeIcon
-            icon={faBriefcase}
-            onClick={() => cambiarEstadoModal2(true)}
-          />
-          <FontAwesomeIcon
-            icon={faPhone}
-            onClick={() => cambiarEstadoModal3(true)}
-          />
+          <div onClick={() => handleClick1}>
+            <FontAwesomeIcon
+              icon={faUser}
+              onClick={() => cambiarEstadoModal(true)}
+            />
+          </div>
+          <div onClick={() => handleClick2}>
+            <FontAwesomeIcon
+              icon={faBriefcase}
+              onClick={() => cambiarEstadoModal2(true)}
+            />
+          </div>
+          <div onClick={() => handleClick3}>
+            <FontAwesomeIcon
+              icon={faPhone}
+              onClick={() => cambiarEstadoModal3(true)}
+            />
+          </div>
         </div>
       </div>
     </div>
