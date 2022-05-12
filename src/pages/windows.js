@@ -20,6 +20,7 @@ export const Windows = () => {
   const [estadoModal2, cambiarEstadoModal2] = useState(false);
   const [estadoModal3, cambiarEstadoModal3] = useState(false);
   const [estadoModal4, cambiarEstadoModal4] = useState(false);
+
   const [max1, setMax1] = useState("none");
   const [max2, setMax2] = useState("none");
   const [max3, setMax3] = useState("none");
@@ -294,6 +295,8 @@ export const Windows = () => {
           </Contenido>
         </Modal>
 
+
+
         <Modal
           estado={estadoModal4}
           cambiarEstado={cambiarEstadoModal4}
@@ -363,7 +366,11 @@ export const Windows = () => {
         </Modal>
       </div>
       <div className="bar">
-        <img alt="logo" className="logo-bar" src={logo}></img>
+        <img
+          alt="logo"
+          className="logo-bar"
+          src={logo}
+        />
         <div className="grid-bar">
           <div onClick={() => handleClick1}>
             <FontAwesomeIcon
@@ -385,6 +392,7 @@ export const Windows = () => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };
